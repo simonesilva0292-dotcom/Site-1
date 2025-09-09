@@ -83,14 +83,15 @@
             </div>
         </section>
 
-<!-- SEU FORMULÁRIO CORRIGIDO E COMPLETO -->
+<!-- FORMULÁRIO PRONTO PARA O NETLIFY -->
 <form id="contact-form" name="contact" method="POST" data-netlify="true" action="/success.html">
-    <input type="text" id="name" name="name" placeholder="Seu nome" required>
-    
-    <!-- CAMPO DE NÚMERO CORRIGIDO -->
-    <input type="tel" id="numero" name="numero" placeholder="(XX) XXXXX-XXXX" required>
+    <!-- Campo oculto para spam (boa prática) -->
+    <input type="hidden" name="form-name" value="contact" />
 
-    <textarea id="message" name="message" rows="5" placeholder="Descreva sua ideia ou necessidade" required></textarea>
+    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+    <input type="tel" id="numero" name="numero" placeholder="(XX) XXXXX-XXXX" required>
+    <textarea id="message" name="message" rows="5" placeholder="Descreva sua ideia" required></textarea>
+    
     <button type="submit" class="cta-button">Enviar Mensagem</button>
 </form>
      
@@ -124,6 +125,7 @@
 </body>
 
 </html>
+
 
 
 
