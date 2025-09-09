@@ -57,8 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contact-form');
 
     contactForm.addEventListener('submit', (e) => {
-        // Impede o comportamento padrão de recarregar a página
-        e.preventDefault(); 
 
         const name = document.getElementById('name').value.trim();
         const email = document.getElementById('email').value.trim();
@@ -70,9 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
         
-        // Simula uma mensagem de sucesso
-        alert('Mensagem enviada com sucesso! (Esta é uma simulação)');
-        contactForm.reset(); // Limpa o formulário após o "envio"
     });
+
 
 });```
