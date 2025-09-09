@@ -83,16 +83,17 @@
             </div>
         </section>
 
-        <!-- SEÇÃO CONTATO -->
-        <section id="contact" class="section">
-            <h2 class="section-title">Vamos Construir seu Projeto</h2>
-            <div class="contact-container">
-              <form id="contact-form" name="contact" method="POST" data-netlify="true">
-                    <input type="text" id="name" placeholder="Seu nome" required>
-                    <input type="email" id="number" placeholder="Seu número" required>
-                    <textarea id="message" rows="5" placeholder="Descreva sua ideia ou necessidade" required></textarea>
-                    <button type="submit" class="cta-button">Enviar Mensagem</button>
-                </form>
+<!-- SEU FORMULÁRIO CORRIGIDO E COMPLETO -->
+<form id="contact-form" name="contact" method="POST" data-netlify="true">
+    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+    
+    <!-- CAMPO DE NÚMERO CORRIGIDO -->
+    <input type="tel" id="numero" name="numero" placeholder="(XX) XXXXX-XXXX" required>
+
+    <textarea id="message" name="message" rows="5" placeholder="Descreva sua ideia ou necessidade" required></textarea>
+    <button type="submit" class="cta-button">Enviar Mensagem</button>
+</form>
+     
                 <div class="quick-links">
                     <h3>Acesso Rápido</h3>
                     <a href="#" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
@@ -123,6 +124,7 @@
 </body>
 
 </html>
+
 
 
 
